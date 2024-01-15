@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: white;
+            
+        }
+        
+        nav{
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: center;
+            align-items: center;
+            justify-content: space-between;
+            color: black;
+        }
+        
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+            color: black;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+
+        }
+        nav ul li a:hover{
+            color: red;
+        }
+        .detel{
+            margin-left: 8%;
+            margin-top: 13%;
+        }
+        .detel h1{
+            font-size: 50px;
+            color: black;
+            margin-bottom: 20px;
+        }
+        span{
+            color: orange;
+        }
+        .detel p{
+            color: black;
+            line-height: 22px;
+        }
+        .detel button{
+            background: black;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            display: inline-block;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .images{
+            width: 45%;
+            height: 80%;
+            position: absolute;
+            bottom: 0;
+            right: 100px;
+        }
+        .images img{
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%);
+            transition: bottom 1s,left 1s;
+        }
+
+
+        .images:hover .girl{
+            left: 45%;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <img src="https://cryptologos.cc/logos/v-systems-vsys-logo.png" height="170" width="150" class="logo">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Hire Me</a></li>
+        </ul>
+    </nav>
+    <div class="detel">
+        <h1>I am Vaishnavi <span>Gupta</span></h1>
+        <p> This is my portfolio website to showes all
+         <br> Details and work experience.
+        </p>
+        <button onclick="location.href='pdf/vg.pdf';">Download CV</button>
+    </div>
+    <div class="images">
+        <img src="girl.png"> 
+        </div>
+        
+    </div>
+    
+</body>
+</html>
